@@ -1,0 +1,7 @@
+.insite-highlight {
+    position: relative;
+    border: 2px solid red;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="css/popup.css" type="text/css">
+    <script src="js/popup.js"></script>
+    <style>
+        body {
+            background-color: yellow;
+        }
+        .modal-footer {
+            display: flex;
+            justify-content: center;
+            gap: 10px; 
+        }
+        .modal-footer button {
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-header">
+        <img src="logo123.png" alt="WD Logo" width="50">
+        <h1>WebDrishti</h1>
+        <div></div>
+    </div>
+    
+    
+    <div class="modal-content">
+        <div class="container">
+            <p class="label">Score: </p>
+            <p class="number" id="number">n/a</p>
+        </div>
+        <button class="analyze-button" type="button" id="toggleButton">Analyze Site</button>
+    </div>
+    <div class="modal-footer">
+        <a target="_blank" href="https://webdrishti.vercel.app"><button class="link" id="reportButton">Visit Our Site</button></a>
+        <a target="_blank" href="#"><button class="link" id="aboutButton">Chat With AI</button></a>
+       
+    </div>
+    
+</body>
+
+</html>

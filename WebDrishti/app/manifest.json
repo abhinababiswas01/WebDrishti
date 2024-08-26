@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Web Drishti",
+    "version": "1.0",
+    "description": "Recognize dark patterns in online stores all over the internet",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "logo123.png",
+            "48": "logo123.png",
+            "128": "logo123.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "js/common.js",
+            "js/block_segment.js",
+            "js/content.js"
+        ],
+        "css": [
+            "css/index.css"
+        ],
+        "run_at": "document_end"
+    }],
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}

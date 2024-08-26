@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(to bottom, #282c34, #1a1a1a);
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* Allow vertical centering */
+  min-height: 100vh;
+  /* Set minimum height for viewport */
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+}
+
+.container {
+  max-width: 800px;
+  width: 70%;
+  /* Adjust width for responsiveness */
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #212529;
+  /* Darker background for container */
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+}
+
+.chat-history {
+  height: 300px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  display: flex;
+  border-radius: 10px;
+  /* Round corners for chat text boxes */
+  padding: 10px 20px;
+}
+
+.user-message {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.ai-message {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.chat-input {
+  display: flex;
+  /* Arrange input and button horizontally */
+  justify-content: space-between;
+  /* Distribute evenly */
+  width: 100%;
+  /* Match container width */
+  margin-top: 20px;
+  /* Add space above input */
+}
+
+.chat-input input {
+  flex: 1;
+  /* Allow input to fill remaining space */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Round corners for input field */
+}
+
+.chat-input button {
+  background-color: #4CAF50;
+  /* Match user message color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  /* Round corners for button */
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    /* Adjust container width for smaller screens */
+  }
+}
+
+/* Centering the text box within chat history */
+.chat-history {
+  display: flex;
+  /* Enable flexbox for chat history */
+  flex-direction: column-reverse;
+  /* Reverse order to display latest messages on top */
+}
