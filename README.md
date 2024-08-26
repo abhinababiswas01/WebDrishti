@@ -38,7 +38,7 @@ By combining these technologies, the Anti Manipulation Brigade efficiently detec
 First, clone this repository or download and unzip it.
 
 ```bash
-git clone https://github.com/abhinababiswas01/WebDrishti
+git clone https://github.com/abhinababiswas01/WebDrishti.git
 cd webdrishti
 ```
 
